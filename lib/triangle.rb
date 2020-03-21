@@ -12,10 +12,6 @@ class Triangle
   
     if @triangle_length_1 * @triangle_length_2 * @triangle_length_3 == 0 || @triangle_length_1 + @triangle_length_2 <= @triangle_length_3 || @triangle_length_1 + @triangle_length_3 <= @triangle_length_2 || @triangle_length_2 + @triangle_length_3 <= @triangle_length_1
       
-    class TriangleError < StandardError
-      
-    end
-      
       begin
         raise TriangleError
         puts error.message
@@ -34,5 +30,9 @@ class Triangle
     end
   
   end
+      
+    class TriangleError < StandardError
+      
+    end
   
 end
